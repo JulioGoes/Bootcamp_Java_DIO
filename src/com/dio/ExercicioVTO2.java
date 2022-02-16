@@ -32,11 +32,5 @@ public class ExercicioVTO2 {
         System.out.println("String: " + nome + ", " + sobrenome);
         System.out.println("Char: " + c1 + ", " + c2);
 
-
-        
-
-      
-
-
     }
 }
