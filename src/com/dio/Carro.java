@@ -5,19 +5,38 @@ public class Carro {
     String modelo;
     int capacidadeTanque;
 
-    Carro(String novaCor){
-        cor = novaCor;
-        modelo = "corsa";
-        capacidadeTanque = 100;
+    Carro(){
+
     }
 
-    public static void main(String[] args) {
-        String novaCor = "preto";
-        Carro meuCarro = new Carro(novaCor);
-        int litro = 10;
-        int total = valorEncherTanque(litro);
-        System.out.println(meuCarro.cor);
-        System.out.println("O valor total para encher o tanque é igual a: " + total);
+    Carro(String corDoCarro, String modelo, int capacidadeTanque){
+        this.cor = corDoCarro;
+        this.modelo = modelo;
+        this.capacidadeTanque = capacidadeTanque;
+    }
+
+    String getCor(){
+        return this.cor;
+    }
+
+    void setCor(String cor){
+        this.cor = cor;
+    }
+
+    String getModelo(){
+        return this.modelo;
+    }
+
+    void setModelo(String modelo){
+        this.modelo = modelo;
+    }
+
+    int getCapacidadeTanque(){
+        return this.capacidadeTanque;
+    }
+
+    void setCapacidadeTanque(int capacidadeTanque){
+        this.capacidadeTanque = capacidadeTanque;
     }
 
     public static int valorEncherTanque(int litro){
